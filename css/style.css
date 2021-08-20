@@ -40,3 +40,39 @@ body {
   min-height: 100%;
 }
 /* -------------------------Resetting all parameters in 0------------------------ */
+/*  */
+/* Сверстаем сначало контент страничку */
+.page {
+  padding: 90px 0px 30px 0px;
+}
+.page_section {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.page_section_1 {
+  background-color: #000f5f;
+}
+.page_title {
+  font-size: 40px;
+  margin: 0px 0px 30px 0px;
+}
+.page_text {
+  font-size: 16px;
+  line-height: 150%;
+}
+.page_text p {
+  margin: 0px 0px 20px 0px;
+}
+.page_section_2 {
+  background-color: #000f5f;
+}
+.page_sub_title {
+  font-size: 30px;
+  margin: 0px 0px 20px 0px;
+}
+.page_section_3 {
+  background-color: #000f5f;
+}
+/*  */
+/* Верстаем шапку странички СТАРТ */
