@@ -36,9 +36,9 @@ body {
   color: #fff;
   font-family: Arial, "Helvetica Neue" Helvetica, sans-serif;
 }
-.wrapper {
+/* .wrapper {
   min-height: 100%;
-}
+} */
 /* -------------------------Resetting all parameters in 0------------------------ */
 /*  */
 /* Сверстаем сначало контент страничку */
@@ -85,9 +85,20 @@ body {
   background-color: lightcoral;
 }
 .header_conteiner {
+  margin: 0px auto;
+  display: flex;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
   min-height: 70px;
 }
 .header_logo {
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
 }
 .header_menu {
 }
@@ -99,9 +110,25 @@ body {
 }
 .menu_list {
 }
+.menu_list > li {
+  position: relative;
+  margin: 0px 0px 0px 20px;
+}
 .menu_sub_list {
 }
 .menu_link {
+  color: #fff;
+  font-size: 18px;
 }
 .menu_sub_link {
+}
+/* Медиа запросъ для екранов шъре чем 767 px */
+@media (min-width: 767px) {
+  .menu_list {
+    display: flex;
+    align-items: center;
+  }
+  .menu_list > li {
+    padding: 10px 0;
+  }
 }
