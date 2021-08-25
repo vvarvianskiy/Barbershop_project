@@ -115,10 +115,25 @@ body {
   margin: 0px 0px 0px 20px;
 }
 .menu_sub_list {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: black;
+  padding: 15px;
+  min-width: 200px;
+}
+.menu_sub_list > li {
+  margin: 0px 0px 10px 0px;
+}
+.menu_sub_list li:last-child {
+  margin: 0px;
 }
 .menu_link {
   color: #fff;
   font-size: 18px;
+}
+.menu_link:hover {
+  text-decoration: underline;
 }
 .menu_sub_link {
 }
@@ -130,5 +145,12 @@ body {
   }
   .menu_list > li {
     padding: 10px 0;
+  }
+  .menu_sub_list {
+    transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
   }
 }
