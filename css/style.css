@@ -85,6 +85,7 @@ body {
   background-color: lightcoral;
 }
 .header_conteiner {
+  max-width: 1200px;
   margin: 0px auto;
   display: flex;
   padding: 0px 30px;
@@ -154,7 +155,7 @@ body._touch .menu_list > li {
   display: flex;
   align-items: center;
 }
-body._touch .menu_list {
+body._touch .menu_link {
   flex: 1 1 auto;
 }
 body._touch .menu_arrow {

@@ -28,8 +28,9 @@ if (isMobile.any()) {
   let menuArrows = document.querySelectorAll(".menu_arrow");
   if (menuArrows.length > 0) {
     for (let index = 0; index < menuArrows.length; index++) {
-      menuArrows.addEventListener("click", function (e) {
-        menuArrows.parentElement.classList.toggle("_active");
+      const menuArrow = menuArrows[index];
+      menuArrow.addEventListener("click", function (e) {
+        menuArrow.parentElement.classList.toggle("_active");
       });
     }
   }
