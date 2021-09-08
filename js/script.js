@@ -1,5 +1,6 @@
 "use strict";
-
+//code from internet -> stackoverflow
+/////////////////////////////////////
 const isMobile = {
   Android: function () {
     return navigator.userAgent.match(/Android/i);
@@ -22,10 +23,13 @@ const isMobile = {
     );
   },
 };
+///////code from internet -> stackoverflow
+///////////////////////////////////////////////////////////////
 
 if (isMobile.any()) {
-  document.body.classList.add("_touch");
-  let menuArrows = document.querySelectorAll(".menu_arrow");
+  ///code from internet -> stackoverflow
+  document.body.classList.add("_touch"); ///code from internet -> stackoverflow
+  let menuArrows = document.querySelectorAll(".menu_arrow"); //через селектор querySelectorAll въберем объектъ для селекции как menu_arrow
   if (menuArrows.length > 0) {
     for (let index = 0; index < menuArrows.length; index++) {
       const menuArrow = menuArrows[index];
@@ -35,5 +39,6 @@ if (isMobile.any()) {
     }
   }
 } else {
-  document.body.classList.add("_pc");
+  ///code from internet -> stackoverflow
+  document.body.classList.add("_pc"); ///code from internet -> stackoverflow
 }
