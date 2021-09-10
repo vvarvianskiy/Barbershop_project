@@ -41,4 +41,26 @@ if (isMobile.any()) {
 } else {
   ///code from internet -> stackoverflow
   document.body.classList.add("_pc"); ///code from internet -> stackoverflow
+// Прокрутка по страничке
+// создаем массив с именем менюЛинкс и с помощю селектора document.querySelectorAll исщим наш дата атрибут
+const menuLinks = document.querySelectorAll (".menu_link[data-goto]");
+ if (menuLinks.length > 0) {
+    menuLinks.forEach(menuLink => {
+      menuLink.addEventListener("click", onMenuLinkClick);
+    });
+
+    function onMenuLinkClick(e) {
+      const menuLink = e.target;
+      if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+          const gotoBlock = document.querySelector(menuLink.dataset.goto);
+          const gotoBlockValue = gotoBlock.getboundingclientrect().top + window.pageYOffset - document.querySelector("header").offsetHeight;
+
+          window.scrollTo({
+              top:gotoBlockValue,
+              behavior: "smooht"
+          });
+              e.parentDefault();
+      }
+    }
+ }
 }
